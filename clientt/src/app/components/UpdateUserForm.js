@@ -44,7 +44,7 @@ export default function UpdateUserForm() {
     })
     
 
-    const resp = await fetch(`http://localhost:9000/api/${state3}`, {
+    const resp = await fetch(`https://employee-management-api.vercel.app/api/${state3}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
     });

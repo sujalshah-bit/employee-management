@@ -6,7 +6,7 @@ export default function Table() {
   const { state1, dispatch1} = useContext(context);
   const [data, setData] = useState();
   const getData = async () => {
-    const resp = await fetch("http://localhost:9000/api", {
+    const resp = await fetch("https://employee-management-api.vercel.app/api", {
       method: "GET",
       headers: { "content-type": "application/json" },
     });
@@ -14,7 +14,7 @@ export default function Table() {
     setData(response);
   };
 const deleteUser = async(id)=>{
-  const resp = await fetch(`http://localhost:9000/api/${id}`, {
+  const resp = await fetch(`https://employee-management-api.vercel.app/api/${id}`, {
       method: "DELETE",
       headers: { "content-type": "application/json" },
     });

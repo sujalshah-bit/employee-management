@@ -25,7 +25,7 @@ export default function AddUserForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:9000/api/create", {
+    const response = await fetch("https://employee-management-api.vercel.app/api/create", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ data }),
