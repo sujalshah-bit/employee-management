@@ -23,6 +23,7 @@ mongoose
 
 // ROUTES
 app.get('/',(req,res)=>res.send('hello '))
+app.get('/send',(req,res)=>res.send('hello '))
 app.use('/api',apiRoutes)
 
 
